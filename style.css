@@ -1,0 +1,76 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+*{
+   /* ## Colors */
+--white: hsl(0, 0%, 100%);
+--lightGray: hsl(212, 45%, 89%);
+--grayishBlue: hsl(220, 15%, 55%);
+--darkBlue: hsl(218, 44%, 22%);
+
+    /* ## Fonts*/
+--Family: 'Outfit', sans-serif;
+--Weights-400: 400;
+--weights-700: 700;    
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--lightGray);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--Family);
+}
+
+.card {
+    width: 280px;
+    height: 420px;
+
+    background-color:var(--white);
+
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.card__qr {
+    width: 95%;
+    height: 60%;
+
+    background: url(images/image-qr-code.png) no-repeat;
+    background-size: 100% 100%; 
+
+    border-radius: 15px;
+}
+
+.card__title{
+    width: 85%;
+
+    color: var(--darkBlue);
+    font-weight: var(--weights-700);
+    font-size: 16px;
+    text-align:  center;
+
+    margin: 15px 0;
+}
+
+.card__descripcion {
+    width: 80%;
+
+    color: var(--grayishBlue);
+    font-size: 15px;
+    font-weight: var(--Weights-400);
+    text-align: center;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
